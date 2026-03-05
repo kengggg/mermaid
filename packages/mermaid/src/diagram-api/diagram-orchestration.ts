@@ -27,6 +27,7 @@ import block from '../diagrams/block/blockDetector.js';
 import architecture from '../diagrams/architecture/architectureDetector.js';
 import { ishikawa } from '../diagrams/ishikawa/ishikawaDetector.js';
 import venn from '../diagrams/venn/vennDetector.js';
+import swimlaneLr from '../diagrams/swimlane-lr/detector.js';
 import { registerLazyLoadedDiagrams } from './detectType.js';
 import { registerDiagram } from './diagramAPI.js';
 import { treemap } from '../diagrams/treemap/detector.js';
@@ -80,6 +81,7 @@ export const addDiagrams = () => {
 
   // Ordering of detectors is important. The first one to return true will be used.
   registerLazyLoadedDiagrams(
+    swimlaneLr,
     c4,
     kanban,
     classDiagramV2,
