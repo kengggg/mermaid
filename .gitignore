@@ -10,6 +10,7 @@ coverage/
 
 dist
 v8-compile-cache-0
+node-compile-cache/
 
 yarn-error.log
 .npmrc
